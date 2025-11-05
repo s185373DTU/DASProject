@@ -32,3 +32,4 @@ dist/
 
 # Data
 data/*.hdf5
+data/GC_data/*.hdf5
