@@ -1,0 +1,1 @@
+Et projekt i forbindelse med deep learning kurset på DTU.
