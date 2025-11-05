@@ -1,0 +1,6 @@
+tensorflow
+h5py
+numpy
+scikit-learn
+tqdm
+isort

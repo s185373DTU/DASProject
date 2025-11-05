@@ -1,30 +1,34 @@
-Et projekt i forbindelse med deep learning kurset på DTU.
+# DAS Project - Meeting Notes
 
-VÆR OBS PÅ AT DATA IKKE KOMMER MED OP. EN RODET OMGANG AF Resumé
+## Project Overview
+This project focuses on anomaly detection and instance segmentation for identifying objects in data.
 
-Kristians idéer
+### Phase 1: Anomaly Detection (Priority)
+- Implement instantaneous anomaly detection with instance segmentation
+- **This is the core focus** - implement as quickly as possible
+- Investigate parallelization opportunities for performance optimization
+- Computer Vision approach is acceptable
 
-Lige nu med data kommer vi til at finde for mange anomalies, fx hvaler, biler osv.
+### Phase 2: Clustering
+- Apply clustering model to detected anomalies
+- Consider HDBSCAN for clustering algorithm
+- Assumption: Objects within the same cluster are the same object (semi-manual identification)
 
-Instantaneous anamoli detection, kan måske også give en simpel klasse må også gerne gøres efter.
+### Phase 3: Identification (Optional)
+- Run identification model directly after anomaly detection
+- Implement self-identification if feasible
 
-Vi må gerne bare køre CV på det.
+## Summary
+1. Detect as many objects as possible
+2. Cluster the detected objects
+3. Implement self-identification (if possible)
 
+## Notes
+- Simple classification can be performed after initial detection
+- Identification model can run as step 2 immediately after anomaly detectionÆR OBS PÅ AT DATA IKKE KOMMER MED OP. EN RODET OMGANG AF Resumé
 
-Start med anamalies detecetion instance segmentation. DET HER er essensen. Gerne så hurtigt som muligt, kig på noget parralization.
+## FRA GUSTAV
 
-derefter clustering modell og clustering. måske en identifikations model med det samme.
+Jeg har prøvet at replikere i CAE.ipynb den model eller approachd e bruger i Label-Free Anomaly Detection. jeg skal bruge noget ground truth data, altså data hvor ingen skibe findes for virkelig at kunne få det op at virke. Jeg kan beskrive resultater senere.
 
-Man kan køre en identifikationsmodel som trin to direkte efter anomlies detection.
-
-Kristian antager at objekterne indenfor clusterene er samme objekt. Så det kan godt være lidt en "manuel identifikation".
-
-Korte af det lange
-
-Find alle objekter, eller så mange som muligt.
-
-Se om vi kan clustere dem
-
-Lav noget self identifikation hvis muligt.
-
-Kig på HDBSCAN.
+Planen er også at implementere en GRAPH DFNN ved nærmere lejlighed.
