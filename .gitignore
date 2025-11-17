@@ -33,3 +33,14 @@ dist/
 # Data
 data/*.hdf5
 data/GC_data/*.hdf5
+
+Graph Diffusion/*
+!Graph Diffusion/**/*.py
+
+# Ignore large dataset files
+*.npy
+*.npz
+*.pkl
+*.csv
+*.h5
+*.pt
